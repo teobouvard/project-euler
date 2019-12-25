@@ -7,6 +7,11 @@ import seaborn as sns
 extension_names = {
     '.rb':'Ruby',
     '.py':'Python',
+    '.c':'C',
+    '.cpp':'C++',
+    '.java':'Java',
+    '.js':'Javascript',
+    '.sh':'Bash',
     }
 
 def count_languages(dir):
