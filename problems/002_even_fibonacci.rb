@@ -1,5 +1,3 @@
-# https://projecteuler.net/problem=2
-
 limit = 4e6
 sum = 0
 a = 1
