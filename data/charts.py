@@ -18,8 +18,10 @@ def count_languages(dir):
     counts = defaultdict(int)
     for program in glob.glob(dir):
         ext = os.path.splitext(program)[-1]
+        filename = os.path.basename(program)
         if ext in extension_names:
-            counts[extension_names[ext]] += 1
+            if not 'X' in filename:
+                counts[extension_names[ext]] += 1
         else:
             print(f'{program} has an unkown extension.')
     return counts
